@@ -50,6 +50,8 @@ margin: 30px;
 #my-character img
 {
     margin-top: 30px;
-    width: 300px;
-    margin-left: 100px;
+    /*width: 300px;*/
+    width: 60%;
+    /*margin-left: 100px;*/
+    margin-left: 20%;
 }

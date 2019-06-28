@@ -310,6 +310,10 @@
     $(window).scroll(function () {
         checkSection();
     });
+
+    //resize
+
+
 </script>
 <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
 <script src="./assets/js/example.js"></script>
@@ -317,6 +321,27 @@
 <script src="./assets/js/project.js"></script>
 <script src="./assets/js/sunburst.js"></script>
 <script src="./assets/js/sports-pie.js"></script>
+<script>
+    var characterPicWidth=$('#my-character img').width();
+    $('#my-character img').css('margin-top',233-43-characterPicWidth/2+'px');
+    window.onresize = function () {  //只能这么写，否则不起作用
 
+
+        //重新绘制timeline 和my character
+        var characterPicWidth=$('#my-character img').width();
+        $('#my-character img').css('margin-top',233-43-characterPicWidth/2+'px');
+        //echarts图大小更新
+        var echartsList = ['#skill-sunburst', '#sports-pie'];
+        for (var i = 0; i < echartsList.length; i++) {
+            var echartsInstance = echarts.getInstanceByDom($(echartsList[i])[0]);
+            if (echartsInstance) {
+                echartsInstance.resize({width: $(echartsList[i]).width(), height: $(echartsList[i]).height()});
+            }
+
+        }
+    }
+
+
+</script>
 </body>
 </html>
