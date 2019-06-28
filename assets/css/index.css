@@ -1,0 +1,55 @@
+#time-line{
+margin: 30px;
+}
+#time-line rect{
+    stroke: none;
+    fill: #dcd4d455
+}
+#time-line circle{
+    stroke: none;
+    fill: #ff7272;
+}
+#time-line .second-circle{
+    stroke: none;
+    fill: #ab2c28;
+}
+#time-line text{
+    text-anchor: middle;
+    font-size: 0.9em;
+    stroke: none;
+    fill: #fff;
+}
+.tooltip {
+    position: absolute;
+    /*width: 200px;*/
+    /*height: 28px;*/
+    pointer-events: none;
+    background-color: #273035;;
+    z-index: 10000;
+    border-radius: 6px;
+    padding: 5px 10px;
+    line-height: 2em;
+    max-width: 600px;
+}
+
+.tooltip p{
+    color: #fff;
+}
+.tooltip span{
+    color: #fff;
+}
+#my-character
+{
+    margin-top: 9px;
+}
+#my-character h3{
+    color:#CCCCCC;
+    font: bolder 18px "Microsoft YaHei";
+    text-align: center;
+}
+#my-character img
+{
+    margin-top: 30px;
+    width: 300px;
+    margin-left: 100px;
+}
